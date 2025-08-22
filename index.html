@@ -2,112 +2,182 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aapke liye ek vishesh sandesh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mujhe Maaf Kar Do ❤️</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      margin: 2em;
-      color: #333;
-    }
-    .container {
-      background: white;
-      padding: 2.5em 3em;
-      border-radius: 12px;
-      max-width: 700px;
-      margin: auto;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      text-align: center;
-      line-height: 1.7;
-    }
-    h1 {
-      color: #2c7a7b;
-      margin-bottom: 0.8em;
-    }
-    p {
-      font-size: 1.2em;
-      margin-bottom: 1.4em;
-    }
-    .highlight {
-      font-weight: bold;
-      color: #20435c;
-    }
-    .footer {
-      font-style: italic;
-      color: #555;
-      font-size: 0.9em;
-      margin-top: 2em;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    /* Photo gallery styles */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1.2em;
-      margin-top: 2em;
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      overflow-x: hidden;
     }
-    .gallery-item {
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+
+    body {
+      background: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.65);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #ffd6d6;
+    }
+
+    #typed-text {
+      font-size: 1.3em;
+      margin: 20px auto;
+      max-width: 700px;
+      line-height: 1.7;
+      white-space: pre-line;
+    }
+
+    .buttons button {
+      margin: 10px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
       cursor: pointer;
+      transition: 0.3s;
     }
-    .gallery-item:hover {
+
+    .buttons button:first-child {
+      background: #ff4b5c;
+      color: white;
+    }
+
+    .buttons button:last-child {
+      background: #eee;
+      color: #333;
+    }
+
+    .buttons button:hover {
       transform: scale(1.05);
     }
-    .gallery-item img {
-      width: 100%;
-      display: block;
-      border-bottom: 1px solid #ddd;
+
+    .gallery {
+      margin-top: 50px;
     }
-    .caption {
-      padding: 0.5em 1em;
-      font-size: 0.95em;
-      color: #666;
+
+    .gallery h2 {
+      margin-bottom: 20px;
+      color: #ffd6d6;
+    }
+
+    .photos {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .photos img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid white;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-style: italic;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      #typed-text {
+        font-size: 1.1em;
+      }
+
+      .photos img {
+        width: 90%;
+        height: auto;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Aapke liye ek vishesh sandesh</h1>
-    <p>
-      Namaste!<br /><br />
-      Main jaanti hoon ki abhi aap dono ke beech kuch takraav aur samasyaayein chal rahi hain, jo dil ko bahut dukh pahunchati hain. Aise waqt mein har koi thoda pareshan aur udaas mehsoos karta hai.<br /><br />
-      Bas yeh yaad rakhiye ki <span class="highlight">[friend's name]</span> aapki kitni parwah karta hai, chahe baatein kitni bhi kathin ho jaayein. Kabhi-kabhi zindagi mein chhoti-chhoti misunderstandings bade dard ka sabab ban jaati hain, lekin samay aur samajh se har rishte ko phir se majboot banaya ja sakta hai.<br /><br />
-      Aap dono ke beech jo bhi baatein hui hain, unhe shanti aur patience ke saath samjha ja sakta hai. Kabhi kabhi thoda waqt dena aur apne dil ko halka karna zaruri hota hai.<br /><br />
-      Yaad rakhiye, rishton ki khoobsurti unhi mein hai jo unhe nibhaane ki koshish karte hain, na ki chhod dene ki.<br /><br />
-      Main yeh sandesh isliye bhej rahi hoon taaki aap dono ko yeh yaad dilaa sakoon ki pyar aur samajh ki takat bahut badi hoti hai. Aap apne aap ko kabhi akela mehsoos mat kijiye, aur apne dil ko kholkar sochiye ki kya sach mein sab kuch khatm ho gaya hai ya phir ek nayi shuruaat ki ja sakti hai.<br /><br />
-      Har raat ke baad ek naya savera hota hai, aur har andhere ke baad roshni.<br /><br />
-      Aasha karti hoon ki aap dono jaldi apne beech ki dooriyan mitakar phir se ek doosre ko samajhne ki koshish karenge.<br /><br />
-      Apna dhyan rakhiye, khud se pyaar kijiye, aur yaad rakhiye ki zindagi mein kabhi haar nahi hoti, bas naye iraade hote hain.<br /><br />
-      Dhanyavaad.
-    </p>
+
+  <!-- Romantic Background Music -->
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Background Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Mujhe Maaf Kar Do ❤️</h1>
+
+    <p id="typed-text"></p>
+
+    <div class="buttons">
+      <button onclick="alert('Mujhe pata tha tum maaf kar dogi! 🥰')">Maaf Kiya 💖</button>
+      <button onclick="alert('Main intezaar karunga... 💔')">Abhi Nahi 😔</button>
+    </div>
 
     <div class="gallery">
-      <div class="gallery-item">
-        <img src="https://via.placeholder.com/300x200?text=Photo+1" alt="Memorable moment 1" />
-        <div class="caption">Yaadon ka ek khoobsurat pal</div>
-      </div>
-      <div class="gallery-item">
-        <img src="https://via.placeholder.com/300x200?text=Photo+2" alt="Memorable moment 2" />
-        <div class="caption">Muskaan jo kabhi nahi bhoolni chahiye</div>
-      </div>
-      <div class="gallery-item">
-        <img src="https://via.placeholder.com/300x200?text=Photo+3" alt="Memorable moment 3" />
-        <div class="caption">Saath bitaye woh lamhe</div>
-      </div>
-      <div class="gallery-item">
-        <img src="https://via.placeholder.com/300x200?text=Photo+4" alt="Memorable moment 4" />
-        <div class="caption">Phir se ek nayi shuruaat ke sapne</div>
+      <h2>Yaadein Humari 📸</h2>
+      <div class="photos">
+        <img src="https://placekitten.com/301/200" alt="Memory 1" />
+        <img src="https://placekitten.com/302/200" alt="Memory 2" />
+        <img src="https://placekitten.com/303/200" alt="Memory 3" />
       </div>
     </div>
 
-    <p class="footer">
-      <em>Yeh chhota sa sandesh un sabke liye, jo apne jazbaat ko bayaan karne se darte hain. Aasha karta hoon ki yeh aapke dil ko thoda sukoon de.</em>
-    </p>
+    <p class="footer">Tumhara hi hamesha, <strong>[Tumhara Naam]</strong></p>
   </div>
+
+  <!-- Typing Animation Script -->
+  <script>
+    const message = `Main jaanta hoon maine tumhe hurt kiya hai...
+Lekin meri feelings, mera pyaar, sab kuch saccha tha.
+Main har pal tumhe yaad karta hoon, har lamha tumhari kami mehsoos hoti hai.
+Agar galti ho gayi ho, toh dil se maafi chahta hoon.
+Tum meri zindagi ho, aur main tumse bepanah pyaar karta hoon. ❤️`;
+
+    let i = 0;
+    const speed = 50;
+
+    function typeWriter() {
+      if (i < message.length) {
+        document.getElementById("typed-text").innerHTML += message.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+
 </body>
 </html>
