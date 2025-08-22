@@ -139,6 +139,8 @@
   </style>
 </head>
 <body>
+  <audio id="bg-music" src="Tu Maro Dariyo - PagalHits.mp3" autoplay loop muted controls></audio>
+
   <div class="bg-hearts">
     <!-- Floating hearts -->
     <span style="left:10%;">❤️</span>
@@ -168,11 +170,12 @@
     <div class="memories">
       <h3>💭 Yaadein...</h3>
       <div class="chat-bubble">Tumhari woh hasi... sab kuch bhula deti thi.</div>
-      <img src="1d.jpeg" alt="1" width="500" height="500">
+      <img src="1d.jpeg" alt="1" style="max-width: 100%; height: auto; border-radius: 12px; margin-top: 15px;">
       <div class="chat-bubble">"Woh lamha jab tumne sar mera kandhe pe rakha tha, usmein chhupa tha humara sachcha saath."..</div>
-      <img src="2d.jpeg" alt="2" width="500" height="500">
+      <img src="2d.jpeg" alt="1" style="max-width: 100%; height: auto; border-radius: 12px; margin-top: 15px;">
       <div class="chat-bubble">"Doori ke bawajood, dil tumhara intezaar karta hai."</div>
-      <img src="3d.jpeg" alt="3" width="500" height="500">
+      <img src="3d.jpeg" alt="1" style="max-width: 100%; height: auto; border-radius: 12px; margin-top: 15px;">
+
     </div>
 
 
@@ -186,33 +189,21 @@
       alert("Dishu, main tumse hamesha pyaar karunga. Kabhi door nahi jaunga. Bas wapas aa jao 💖");
 
     }
+const music = document.getElementById('bg-music');
+    const startMusic = () => {
+      music.muted = false;
+      music.play();
+      document.removeEventListener('click', startMusic);
+      document.removeEventListener('touchstart', startMusic);
+    };
 
-    // Timer: Since breakup or last message
-    const startDate = new Date("2025-08-01T00:00:00"); // Change date here
-    const timerEl = document.getElementById("timer");
-
-    function updateTimer() {
-      const now = new Date();
-      const diff = now - startDate;
-
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const minutes = Math.floor((diff / (1000 * 60)) % 60);
-
-      timerEl.textContent = `Tumhare bina guzar chuke hain: ${days} din, ${hours} ghante, ${minutes} minute`;
-    }
-
-    setInterval(updateTimer, 60000); 
-
-    updateTimer();
+    document.addEventListener('click', startMusic);
+    document.addEventListener('touchstart', startMusic);
+  
   </script>
 
-  <!-- Optional background music (can be replaced with your file) -->
-  <!-- 
-  <audio autoplay loop>
-    <source src="soft-song.mp3" type="audio/mpeg">
-  </audio>
-  -->
+ 
+
 
 </body>
 </html>
